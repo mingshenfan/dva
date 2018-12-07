@@ -1,0 +1,73 @@
+.Name{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.top{
+    width: 100%;
+    height: 4rem;
+    position: relative;
+    img {
+        width: 2rem;
+        position: absolute;
+		top: 25%;
+	    left: 50%;
+	    transform: translate(-50%);
+        height: 2rem;
+    }
+}
+.cotipn{
+    height: 7rem;
+    width: 100%;
+    font-size: 24px;
+    text-align: center;
+
+    p{
+        width: 80%;
+        height: 1rem;
+        line-height: 1rem;
+        color: pink;
+        margin:.4rem auto;
+        border: 1px solid pink;
+        border-radius: 1rem;
+        a{
+            color: pink;
+        }
+    }
+    span{
+        font-size: 20px;
+        text-decoration:underline;
+    }
+}
+.footer{
+    width: 100%;
+    position: relative;
+    .hrlo{
+        font-size:.35rem;
+        padding: 0 1rem;
+        position: absolute;
+        top: -.25rem;
+        left: 20%;
+        z-index: 10;
+        background: white;
+    }
+    .fNav{
+        width: 100%;
+        display: flex;
+        margin-top: .5rem;
+        text-align: center;
+        dl{
+            flex: 1;
+                img{
+                    width: .8rem;
+                    border: 1px solid #ccc;
+                    border-radius: 50%;
+                    padding: .2rem;
+                    height: .8rem;
+                    }
+            
+            font-size: 22px;
+        }
+    }
+}

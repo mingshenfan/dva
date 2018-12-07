@@ -1,0 +1,73 @@
+.Dis {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.Distop {
+    width: 100%;
+    height: 1rem;
+    background: #33383A;
+    color: white;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    border: 1px #363B3D solid;
+    div {
+        flex: 1
+    }
+    img {
+        width: .7rem;
+        padding: .2rem;
+        height: .7rem;
+    }
+    .Disinput{
+        flex: 3;
+        color: #ADB0B0;
+        background: #5B6061;
+        border-radius: 1rem;
+        height: 0.6rem;
+        line-height: .6rem;
+        margin: .2rem 0;
+        display: flex;
+        font-size: .3rem;
+        img {
+            width: 0.4rem;
+            height: 0.4rem;
+            
+        }
+    }
+}
+.DisMain{
+    width: 100%;
+    position: relative;
+    .DisMainH{
+        width: 100%;
+        height: 1.3rem;
+        text-align: center;
+        padding:.3rem;
+        display: flex;
+        background: #363B3D;
+        margin-top: 1rem;
+        position: fixed;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        a{
+            flex: 1;
+            color: white;
+            font-size: .45rem;
+        }
+    }
+    .DisMainC{
+        position: absolute;
+        top: 2.3rem;
+        left: 0;
+        width: 100%;
+        height: 6rem;
+        img{
+            z-index:2;
+        }
+    }
+}

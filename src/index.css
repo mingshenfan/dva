@@ -1,0 +1,24 @@
+*{
+  margin:0px;
+  padding:0px;
+}
+ul,li{
+    list-style:none;
+}
+body {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size:62.5%;
+}
+
+img,div,body,html,ul,li,a{ -webkit-touch-callout: none; }
+
+a:active{ background-color: transparent !important;
+
+ -webkit-tap-highlight-color: transparent; border:0;outline:none;}
+
+input{-webkit-appearance:none;}

@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+a{
+    text-decoration: none;
+}
+.loGin{
+    width: 100%;
+    height: 100%;
+}
+header {
+    width: 100%;
+    height: .8rem;
+    line-height: .8rem;
+    color: white;
+    background: darkgray;
+    display: flex;
+    font-size: .45rem;
+    text-align: center;
+    .left{
+        width: 10%;
+        color: white;
+    }
+    .title{
+        width: 90%;
+    }
+}
+.main{
+    flex: 1;
+    padding: .2rem;
+    .fRom{
+        width: 100%;
+        p{
+            width: 100%;
+            height: 1rem;
+            border-bottom: 1px solid #ccc;
+        }
+        input {
+            color: #ccc;
+        }
+    }
+    .fRomp{
+        width: 100%;
+        height: 0.7rem;
+        line-height: .7rem;
+        text-align: center;
+        background: darkgray;
+        color: #ccc;
+        border-radius: .7rem;
+        margin-top: .5rem;
+        font-size: .4rem;
+    }
+    .pp{
+        margin-top: .5rem;
+        width: 100%;
+        margin-left:40%;
+        text-decoration:underline;
+        font-size: .35rem;
+    }
+}
