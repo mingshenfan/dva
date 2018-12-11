@@ -15,3 +15,7 @@ export function getUrl(id){
 export function getDetail(id){
   return request(`${host}/song/detail?ids=${id}`)
 }
+// 获取歌词
+export function getLyric(id){
+  return request(`${host}/lyric?id=${id}`)
+} 

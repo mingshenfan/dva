@@ -22,36 +22,18 @@ export default class recommend extends Component {
 
   render() {
     let { banners } = this.props;
-    console.log();
-
+    console.log(banners);
     return (
       <div className={srtle.RemoM}>
-        <Carousel autoplay className={srtle.recSWipr}>{
-          banners.map((item, index) => {
-            return <div>
-              <img key={index} src={item.imageUrl} />
-            </div>
-
-          })
-        }</Carousel>
-        <div className={srtle.NAv}>
-          <dl>
-            <dt><img src='/assets/tinggeshiqu.png' /></dt>
-            <dd>私人FM</dd>
-          </dl>
-          <dl>
-            <dt><img src='/assets/tinggeshiqu.png' /></dt>
-            <dd>私人FM</dd>
-          </dl>
-          <dl>
-            <dt><img src='/assets/tinggeshiqu.png' /></dt>
-            <dd>私人FM</dd>
-          </dl>
-          <dl>
-            <dt><img src='/assets/tinggeshiqu.png' /></dt>
-            <dd>私人FM</dd>
-          </dl>
-        </div>
+        <Carousel autoplay  className={srtle.recSWipr}>
+        {
+            banners.map((item, index) => {
+              return <div>
+                <img className={srtle.RIMG} key={index} src={item.imageUrl} />
+              </div>
+            })
+          }
+        </Carousel>
       </div>
     )
   }

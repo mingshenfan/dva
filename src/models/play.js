@@ -1,10 +1,11 @@
-import { getUrl, getDetail } from '../services/index';
+import { getUrl,getLyric, getDetail } from '../services/index';
 
 export default {
   namespace: 'play',
   state: {
     id: 0,
     url: '',
+    lyric: '',
     info: {},// 歌曲信息
     detail: {},// 歌曲详情
     current: 0, // 当前歌曲下表
@@ -27,10 +28,18 @@ export default {
       })
     }
   },
-
+  * getLyric({payload}, {call, put}){
+  // 获取歌词
+  let lyric = yield call(getLyric, payload);
+  yield put({
+    type: 'updateState',
+    payload: {
+      lyric: lyric.data.lrc.lyric
+    }
+  })
+},
   reducers: {
     updateState(state, action){
-      console.log('action...', action);
       return {...state, ...action.payload}
     },
   }

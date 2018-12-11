@@ -13,9 +13,12 @@
         width: 80%;
         height: 0.8rem;
         margin: .1rem;
+        text-align: center;
         background: #ccc;
         border-radius: .8rem;
         color: white;
+        overflow: hidden;
+        outline:none;
         border: none;
     }
     .button {
@@ -23,7 +26,7 @@
         height: 0.8rem;
         margin: .1rem;
         border: none;
-        background: darkgoldenrod;
+        background: #ccc;
     }
 }
 .SeMain{
@@ -38,12 +41,11 @@
     }
 }
 .SeList{
-    position: fixed;
     width: 100%;
-    top: 1rem;
-    left: 0;
+    height: 10rem;
     z-index: 20;
     background: white;
+    margin-top: 1rem;
     a{
         color: #ccc;
     }
@@ -51,5 +53,17 @@
         width: 100%;
         border-bottom: 1px solid #c0c0c0;
         padding: .15rem .3rem;
+        p{
+            overflow:hidden;
+            text-overflow:ellipsis;
+            white-space:nowrap;
+        }
+        .title{
+            font-size: .45rem;
+        }
+        .pte{
+            width: 100%;
+            font-size: .3rem;
+        }
     }
 }
