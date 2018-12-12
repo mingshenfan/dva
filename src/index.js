@@ -1,6 +1,7 @@
 import dva from 'dva';
 import './styles/compontent.css';
 import 'antd/dist/antd.css';
+import 'antd-mobile/dist/antd-mobile.css';
 // 引入路由模式
 // import createHistory from 'history/createBrowserHistory';
 import createHistory from 'history/createHashHistory';

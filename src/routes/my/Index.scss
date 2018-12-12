@@ -1,0 +1,71 @@
+*{
+    margin: 0;padding: 0;
+}
+.mY{
+    width: 100%;
+    height: 100%;
+}
+.Head{
+    width: 100%;
+    height: 0.8rem;
+    line-height: .8rem;
+    background: #323739;
+    display: flex;
+    justify-content: space-between;
+    .Headlog{
+        width: .6rem;
+        height:.6rem;
+        margin: .1rem;
+        z-index: 10;
+    }
+}
+.Main{
+    width: 100%;
+    .MainTop{
+        width: 100%;
+        height: auto;
+        .MainLi{
+            width: 100%;
+            height: 1rem;
+            line-height: 1rem;
+            display: flex;
+            
+        }
+        .Mainlog{
+            width: 0.4rem;
+            height: 0.4rem;
+            margin: .3rem;
+        }
+        .MainTit{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            height: 100%;
+            border-bottom: 1px solid #ccc;
+            h3{
+                font-size: 24px;
+            }
+            p{
+                color: #ccc;
+                padding-right:.4rem; 
+            }
+        }
+    }
+}
+.ant-menu-submenu-title{
+    width: 100%;
+    display: flex;
+    i{
+        position: static;
+    }
+    .title{
+        background: #ccc;
+        display: block;
+    }
+}
+.ant-menu-item-selected {
+   color: aliceblue;
+}
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+     background-color: pink; 
+}
