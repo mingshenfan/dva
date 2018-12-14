@@ -2,7 +2,7 @@ import React from 'react';
 
 class Index extends React.PureComponent{
   render(){
-    return <h1>Index3</h1>
+    return <h1>nideshijie</h1>
   }
 }
 
